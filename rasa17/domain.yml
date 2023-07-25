@@ -1,0 +1,54 @@
+version: '2.0'
+config:
+  store_entities_as_slots: true
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
+intents:
+- chitchat:
+    use_entities: true
+#- faq:
+#    use_entities: true
+- action
+
+entities: []
+slots: {}
+responses:
+  utter_greet:
+  - text: أهلا! كيف حالك؟
+  utter_goodbye:
+  - text: وداعا
+  utter_affirm:
+  - text: هل يمكننى مساعدتك بشئ اخر؟
+  utter_deny:
+  - text:  هل يمكننى مساعدتك بشئ اخر؟
+  utter_appointments:
+  - text: تفضل
+  utter_book:
+  - text: تم الحجز
+  utter_dermatologyDepartment:
+  - text:  تم الحجز
+  utter_boneDepartment:
+  - text:  تم الحجز
+  utter_eyaDepartment:
+  - text:  تم الحجز
+  utter_internalDepartment:
+  - text:  تم الحجز
+  utter_medicines:
+  - text: تفضل
+
+
+#  utter_chitchat/cheer_up:
+#  - image: https://i.imgur.com/nGF1K8f.jpg
+#    text: 'Here is something to cheer you up:'
+#  utter_chitchat/did_that_help:
+#  - text: Did that help you?
+#  utter_chitchat/happy:
+#  - text: Great, carry on!
+
+
+actions:
+  - action
+
+

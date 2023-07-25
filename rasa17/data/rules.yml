@@ -1,0 +1,78 @@
+version: "2.0"
+
+rules:
+
+- rule: Say generative
+  steps:
+  - intent: nlu_fallback
+  - action: action
+
+- rule: response1
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- rule: response2
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: response3
+  steps:
+  - intent: affirm
+  - action: utter_affirm
+
+- rule: response4
+  steps:
+  - intent: appointments
+  - action: utter_appointments
+
+- rule: response6
+  steps:
+  - intent: book
+  - action: utter_book
+
+- rule: response7
+  steps:
+  - intent: dermatologyDepartment
+  - action: utter_dermatologyDepartment
+
+- rule: response8
+  steps:
+  - intent: boneDepartment
+  - action: utter_boneDepartment
+
+- rule: response9
+  steps:
+  - intent: eyaDepartment
+  - action: utter_eyaDepartment
+
+- rule: response10
+  steps:
+  - intent: internalDepartment
+  - action: utter_internalDepartment
+
+- rule: response11
+  steps:
+  - intent: medicines
+  - action: utter_medicines
+
+
+
+
+
+#- rule: Say goodbye anytime the user says goodbye
+#  steps:
+#  - intent: goodbye
+#  - action: utter_goodbye
+
+#- rule: Say 'I am a bot' anytime the user challenges
+#  steps:
+#  - intent: bot_challenge
+#  - action: utter_iamabot
+
+#- rule: Say 'I am a bot' anytime the user challenges
+#  steps:
+#  - intent: action
+#  - action: action
+
